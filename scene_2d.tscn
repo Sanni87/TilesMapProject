@@ -4,3 +4,43 @@
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(4, 4)
+
+[node name="Player" type="CharacterBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+
+[node name="Sprite2D" type="Sprite2D" parent="Player"]
+
+[node name="Enemy" type="CharacterBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy"]
+
+[node name="Sprite2D" type="Sprite2D" parent="Enemy"]
+
+[node name="Hitbox" type="Area2D" parent="Enemy"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy/Hitbox"]
+
+[node name="Floor" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor"]
+
+[node name="Sprite2D" type="Sprite2D" parent="Floor"]
+
+[node name="Wall_L" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall_L"]
+
+[node name="Sprite2D" type="Sprite2D" parent="Wall_L"]
+
+[node name="Wall_R" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall_R"]
+
+[node name="Sprite2D" type="Sprite2D" parent="Wall_R"]
+
+[node name="Coin" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Coin"]
+
+[node name="Sprite2D" type="Sprite2D" parent="Coin"]
